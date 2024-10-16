@@ -46,7 +46,7 @@ function checkAnswer() {
 
     // Compare user's answer with the correct answer and provide feedback
     if (userAnswer === correctAnswer) {
-        feedBack.textContent = 'Correct! Well done!';
+        feedBack.textContent = 'Correct! Well done.';
     } else {
         feedBack.textContent = "That's incorrect. Try again!";
     }
