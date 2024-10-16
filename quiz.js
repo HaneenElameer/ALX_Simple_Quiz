@@ -1,7 +1,12 @@
 function checkAnswer(){
     let correctAnswer = "4";
 let checkedRadioButton = document.querySelector('input[name="quiz"]:checked')
-const userAnswer = checkedRadioButton ? checkedRadioButton.value : null;
+let userAnswer;
+if (checkedRadioButton) {
+  userAnswer = checkedRadioButton.value;
+} else {
+  userAnswer = null;
+}
 if (!checkedRadioButton) {
     alert('Please select an answer');
     return;
